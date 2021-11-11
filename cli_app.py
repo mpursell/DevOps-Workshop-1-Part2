@@ -6,13 +6,13 @@ def add_Review():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('film')
-    parser.add_argument('rating')
+    parser.add_argument('--film')
+    parser.add_argument('--stars')
 
     args = parser.parse_args()
 
     filmName = args.film
-    rating = args.rating
+    rating = args.stars
 
     with open('films.csv', 'a') as csv:
 
